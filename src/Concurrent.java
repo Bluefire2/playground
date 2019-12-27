@@ -13,6 +13,8 @@ public class Concurrent {
         executor.execute(task2);
         executor.execute(task3);
 
+        // This method doesn't instantly kill the executor - it makes it stop accepting new tasks and wait for the
+        // current ones to finish
         executor.shutdown();
     }
 

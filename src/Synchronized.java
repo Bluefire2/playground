@@ -38,8 +38,8 @@ public class Synchronized {
 
         }
 
-        // This time, access to shared data (result) is synchronized, meaning only one thread can interact with it at a time
-        // So this should be zero like we would expect:
+        // This time, access to shared data (result) is synchronized, meaning only one thread can increment/decrement at
+        // any given time. So this should be zero like we would expect:
         System.out.println("The final value is: " + result);
     }
 }
