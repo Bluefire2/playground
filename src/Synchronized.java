@@ -31,7 +31,7 @@ public class Synchronized {
         executor.submit(decrementer);
         executor.shutdown();
 
-        // wait for all threads to complete...
+        // wait for all tasks to complete...
         try {
             executor.awaitTermination(Long.MAX_VALUE, TimeUnit.NANOSECONDS);
         } catch (InterruptedException e) {
